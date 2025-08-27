@@ -1,0 +1,14 @@
+C:\Users\steve\Desktop\C# Apps\HumEv\HumEv\obj\Debug\net10.0\HumEv.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\steve\Desktop\C# Apps\HumEv\HumEv\obj\Debug\net10.0\HumEv.AssemblyInfoInputs.cache
+C:\Users\steve\Desktop\C# Apps\HumEv\HumEv\obj\Debug\net10.0\HumEv.AssemblyInfo.cs
+C:\Users\steve\Desktop\C# Apps\HumEv\HumEv\obj\Debug\net10.0\HumEv.csproj.CoreCompileInputs.cache
+C:\Users\steve\Desktop\C# Apps\HumEv\HumEv\bin\Debug\net10.0\HumEv.exe
+C:\Users\steve\Desktop\C# Apps\HumEv\HumEv\bin\Debug\net10.0\HumEv.deps.json
+C:\Users\steve\Desktop\C# Apps\HumEv\HumEv\bin\Debug\net10.0\HumEv.runtimeconfig.json
+C:\Users\steve\Desktop\C# Apps\HumEv\HumEv\bin\Debug\net10.0\HumEv.dll
+C:\Users\steve\Desktop\C# Apps\HumEv\HumEv\bin\Debug\net10.0\HumEv.pdb
+C:\Users\steve\Desktop\C# Apps\HumEv\HumEv\obj\Debug\net10.0\HumEv.dll
+C:\Users\steve\Desktop\C# Apps\HumEv\HumEv\obj\Debug\net10.0\refint\HumEv.dll
+C:\Users\steve\Desktop\C# Apps\HumEv\HumEv\obj\Debug\net10.0\HumEv.pdb
+C:\Users\steve\Desktop\C# Apps\HumEv\HumEv\obj\Debug\net10.0\HumEv.genruntimeconfig.cache
+C:\Users\steve\Desktop\C# Apps\HumEv\HumEv\obj\Debug\net10.0\ref\HumEv.dll
