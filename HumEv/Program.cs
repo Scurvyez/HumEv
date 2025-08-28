@@ -8,6 +8,7 @@
             float latitudeDeg = 47.9704f;
             float waterProx = 0.7f;
             float vegScore = 0.65f;
+            float timeOfDay = 0.825f;
             WeatherType weather = WeatherType.Thunderstorms;
             TopographyType topo = TopographyType.Mountain;
             int maxIterations = 50;
@@ -19,6 +20,7 @@
             EnvironmentModifiers.ApplyTopographyMods(topo, ref outdoorDryBulbC, ref outdoorRelHumidity);
             EnvironmentModifiers.ApplyWaterProximityMods(waterProx, ref outdoorDryBulbC, ref outdoorRelHumidity);
             EnvironmentModifiers.ApplyVegetationCoverageMods(vegScore, ref outdoorDryBulbC, ref outdoorRelHumidity);
+            EnvironmentModifiers.ApplyDayNightCycleMods(timeOfDay, ref outdoorDryBulbC, ref outdoorRelHumidity);
             
             float localPressure = Atmospherics.PressureAtElevation(elevationM);
             float indoorDryBulbC = UnitConverter.FahrenheitToCelsius(65f);

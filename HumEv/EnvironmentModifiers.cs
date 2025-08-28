@@ -43,6 +43,10 @@ namespace HumEv
         private const int SeasonalSolsticePhaseShift = 80;
         private const float SeasonalHumidityAdj = 0.05f;
         
+        // --- Day/Night ---
+        private const float DayNightTempAmplitude = 6.0f;
+        private const float DayNightHumidityAmplitude = 0.1f;
+        
         public static void ApplyWeatherMods(WeatherType weather,  
             ref float dryBulbC, ref float relHumidity)
         {
@@ -133,6 +137,19 @@ namespace HumEv
             
             float humidityAdjustment = SeasonalHumidityAdj * seasonalFactor;
             relHumidity = Math.Clamp(relHumidity + humidityAdjustment, 0f, 1f);
+        }
+        
+        public static void ApplyDayNightCycleMods(float timeOfDayNorm, 
+            ref float dryBulbC, ref float relHumidity)
+        {
+            timeOfDayNorm = Math.Clamp(timeOfDayNorm, 0f, 1f);
+            
+            float angle = timeOfDayNorm * 2f * MathF.PI;
+            float tempOffset = DayNightTempAmplitude * MathF.Sin(angle - MathF.PI / 2f);
+            dryBulbC += tempOffset;
+            
+            float humidityOffset = -DayNightHumidityAmplitude * MathF.Sin(angle - MathF.PI / 2f);
+            relHumidity = Math.Clamp(relHumidity + humidityOffset, 0f, 1f);
         }
     }
 }
